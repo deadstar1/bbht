@@ -1,27 +1,26 @@
-# BBHT
-
-Bug Bounty Hunting Tools is a script to install the most popular tools used while looking for vulnerabilities for a bug bounty program.
- 
-# Tools
-
-- dirsearch
-- JSParser
-- knockpy
-- lazys3
-- recon_profile
-- sqlmap-dev
-- Sublist3r
-- teh_s3_bucketeers
-- virtual-host-discovery
-- wpscan
+vagrant box containing [BBHT](https://github.com/nahamsec/bbht)(Bug Bounty Hunting Tools).
 
 
-This script also grabs the aliases created and published here:
-https://github.com/nahamsec/recon_profile
 
 
-# Installing
-- git clone https://github.com/nahamsec/bbht.git
-- cd bbht
-- chmod +x install.sh
-- ./install.sh
+
+## List of installed Bug Bounty Hunting Tools
+* sublist3r
+* wpscan
+* dirsearch
+* lazys3
+* virtual host discovery
+* sqlmap
+* knock.py
+* relative-url-extractor
+* recon-ng
+* gittyleaks*
+* wafwoof*
+* recon.sh not yet installed
+
+
+
+note: * means installed by pip
+
+## Help
+
