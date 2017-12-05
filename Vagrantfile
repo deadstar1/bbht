@@ -81,6 +81,7 @@ config.vm.synced_folder "./", "/var/www", id: "vagrant-root",
   # install this tools
 
    config.vm.provision "shell", inline: <<-SHELL
+   cd /vagrant
    chmod +x install.sh
    sudo ./install.sh
 

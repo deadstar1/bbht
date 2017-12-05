@@ -8,6 +8,7 @@ sudo apt-get install -y libssl-dev
 sudo apt-get install -y jq
 sudo apt-get install -y ruby-full
 sudo apt-get install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+sudo apt-get install -y realpath
 
 #Don't forget to set up AWS credentials!
 echo "Don't forget to set up AWS credentials!"
@@ -79,6 +80,7 @@ echo "done"
 
 echo "installing relative-url-extractor"
 git clone https://github.com/jobertabma/relative-url-extractor.git
+cd /vagrant/tools/
 echo "done"
 
 echo "installing wafwoof"
@@ -89,8 +91,21 @@ echo 'done'
 #git clone https://LaNMaSteR53@bitbucket.org/LaNMaSteR53/recon-ng.git
 #cd recon-ng
 #sudo pip install -r REQUIREMENTS
-cp bash_profile ~/.bash_profile
+echo "done"
+
+echo "installing recon.sh"
+git clone https://github.com/jobertabma/recon.sh.git
+cd /vagrant/tools/
+echo "done"
+
+cp /vagrant/bash_profile ~/.bash_profile
 source ~/.bash_profile
+
+# init recon.sh for recon-data
+mkdir /vagrant/recon-data
+cd /vagrant/recon-data
+git init
+recon.sh init /vagrant/recon-data
 
 
 echo "One last time: don't forget to set up AWS credentials in ~/.aws/!"

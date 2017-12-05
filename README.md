@@ -1,4 +1,4 @@
-vagrant box containing [BBHT](https://github.com/nahamsec/bbht)(Bug Bounty Hunting Tools).
+A vagrant box containing [BBHT](https://github.com/nahamsec/bbht)(Bug Bounty Hunting Tools).
 
 
 
@@ -16,7 +16,7 @@ vagrant box containing [BBHT](https://github.com/nahamsec/bbht)(Bug Bounty Hunti
 * recon-ng
 * gittyleaks*
 * wafwoof*
-* recon.sh not yet installed
+* recon.sh
 
 
 
